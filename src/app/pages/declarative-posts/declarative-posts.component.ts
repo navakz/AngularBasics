@@ -41,8 +41,10 @@ export class DeclarativePostsComponent implements OnInit {
   ngOnInit() {
     this.loaderService.showLoader();
   }
+
   onCategoryChange(event: Event) {
     let selectedCategoryId = (event.target as HTMLSelectElement).value;
     this.selectedCategorySubject.next(selectedCategoryId);
   }
+  
 }
